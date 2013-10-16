@@ -211,7 +211,7 @@ namespace Sitecore.MultiRootTreelist.Code
 			output.Write(style);
 			output.Write(">");
 			RenderTreeNodeIcon(output, item);
-			output.Write(item.Appearance.DisplayName);
+			output.Write("<span hidefocus=\"true\" class=\"scContentTreeNodeTitle\" tabindex='0'>{0}</span>", this.GetHeaderValue(item));
 			output.Write("</a>");
 		}
 
